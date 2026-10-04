@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WakeStar Support</title>
+<meta name="description" content="Get help with the WakeStar alarm app.">
+<style>
+  /* Plain legal page: one readable column, system fonts, light and dark. */
+  :root {
+    --bg: #FAF8F4;
+    --fg: #22201C;
+    --muted: #6B655B;
+    --accent: #8A5A12;
+    --line: #E6E0D4;
+    --panel: #F1ECE2;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12110F;
+      --fg: #EEEAE2;
+      --muted: #A39C90;
+      --accent: #F2C36B;
+      --line: #2A2722;
+      --panel: #1B1915;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 48px 20px 80px;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 6px; text-wrap: balance; }
+  h2 { font-size: 1.2rem; margin: 40px 0 8px; text-wrap: balance; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 1.2em; margin: 0 0 12px; }
+  a { color: var(--accent); }
+  .meta { color: var(--muted); font-size: 0.95rem; margin-bottom: 28px; }
+  .summary {
+    background: var(--panel);
+    border-radius: 12px;
+    padding: 18px 20px;
+  }
+  .summary ul { margin: 0; }
+  .summary li:last-child { margin-bottom: 0; }
+  .table-wrap { overflow-x: auto; margin: 0 0 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; font-size: 0.85rem; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>WakeStar Support</h1>
+  <p class="meta">We usually reply within two days.</p>
+
+  <h2>Contact us</h2>
+  <p>Email <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a>. Tell us your iPhone model, your iOS version,
+  and what happened. You can also send a message from the app: Settings → Report a Bug.</p>
+
+  <h2>Common questions</h2>
+  <p><strong>My alarm didn't ring.</strong> Make sure WakeStar is allowed to schedule alarms: open the iOS Settings app
+  → WakeStar and check that alarms are allowed. Then open WakeStar once so it can reschedule your alarms.</p>
+  <p><strong>How do I cancel my subscription?</strong> Open the iOS Settings app → your name → Subscriptions →
+  WakeStar Pro, then tap Cancel Subscription. You keep Pro until the end of the period you paid for.</p>
+  <p><strong>I bought WakeStar Pro on another iPhone.</strong> Open WakeStar → Settings → Manage Subscription and tap
+  Restore past purchases, signed in with the same Apple ID you bought it with.</p>
+  <p><strong>How do I get a refund?</strong> Apple handles refunds. Request one at
+  <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+  <p><strong>How do I delete my data?</strong> See <a href="/privacy/">our privacy policy</a> under “Your choices”.</p>
+  <footer>WakeStar · <a href="/support/">Support</a> · <a href="/privacy/">Privacy Policy</a></footer>
+</main>
+</body>
+</html>

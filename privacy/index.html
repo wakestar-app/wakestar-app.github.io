@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WakeStar Privacy Policy</title>
+<meta name="description" content="How the WakeStar alarm app handles your data.">
+<style>
+  /* Plain legal page: one readable column, system fonts, light and dark. */
+  :root {
+    --bg: #FAF8F4;
+    --fg: #22201C;
+    --muted: #6B655B;
+    --accent: #8A5A12;
+    --line: #E6E0D4;
+    --panel: #F1ECE2;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12110F;
+      --fg: #EEEAE2;
+      --muted: #A39C90;
+      --accent: #F2C36B;
+      --line: #2A2722;
+      --panel: #1B1915;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 48px 20px 80px;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 6px; text-wrap: balance; }
+  h2 { font-size: 1.2rem; margin: 40px 0 8px; text-wrap: balance; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 1.2em; margin: 0 0 12px; }
+  a { color: var(--accent); }
+  .meta { color: var(--muted); font-size: 0.95rem; margin-bottom: 28px; }
+  .summary {
+    background: var(--panel);
+    border-radius: 12px;
+    padding: 18px 20px;
+  }
+  .summary ul { margin: 0; }
+  .summary li:last-child { margin-bottom: 0; }
+  .table-wrap { overflow-x: auto; margin: 0 0 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; font-size: 0.85rem; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>WakeStar Privacy Policy</h1>
+  <p class="meta">Effective October 4, 2026</p>
+
+  <div class="summary">
+    <ul>
+      <li>WakeStar has no accounts. We never ask for your name.</li>
+      <li>Camera, microphone and motion are processed on your iPhone and never uploaded.</li>
+      <li>We collect anonymous usage analytics to improve the app. You can turn it off in Settings.</li>
+      <li>If you allow location, your coordinates are sent to our weather provider to show local weather.</li>
+      <li>No ads. We never sell your data or track you across other apps.</li>
+    </ul>
+  </div>
+
+  <h2>Who we are</h2>
+  <p>WakeStar ("we") is an alarm app for iPhone. If you have any question about this
+  policy or your data, email <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a>.</p>
+
+  <h2>What stays on your iPhone</h2>
+  <p>Most of WakeStar works entirely on your device. The following is never sent to us or anyone else:</p>
+  <ul>
+    <li><strong>Camera.</strong> Exercise missions such as squats and push-ups analyze the camera image on
+    your iPhone to count reps. No photos or video are recorded or uploaded.</li>
+    <li><strong>Microphone and speech.</strong> Speaking missions are recognized on your device. No audio
+    or transcripts leave it.</li>
+    <li><strong>Motion.</strong> Step and shake missions read your iPhone's motion sensors on the device.</li>
+    <li><strong>Screen Time.</strong> If you use App Lock, the apps you pick are stored as private tokens
+    created by Apple. We can't see which apps they are, and they never leave your device.</li>
+    <li><strong>Your content.</strong> Alarm labels, sounds you import, QR codes you register, affirmations
+    you type and your wake-up history are stored only on your iPhone.</li>
+  </ul>
+
+  <h2>What we collect, and why</h2>
+
+  <p><strong>Anonymous usage analytics.</strong> To learn which features help people wake up, the app sends
+  usage events to our analytics provider, PostHog. Examples: an alarm was created or rang, a mission
+  was completed, a screen of the setup was finished, the paywall was shown. Events include the alarm
+  and bedtime times you set, your settings and permission choices, your device model, iOS version,
+  language and time zone. Each install gets a random ID that is not connected to your name, email,
+  Apple ID or device identifiers. You can see this ID in Settings → About. Like any internet service,
+  PostHog can see the IP address your request comes from. We don't use it to identify you.</p>
+  <p>You can turn analytics off at any time in Settings → Share Anonymous Analytics.</p>
+
+  <p><strong>Weather and location.</strong> If you allow location access, WakeStar sends your device's
+  coordinates to WeatherAPI.com to get your local forecast, and uses Apple's location services to look
+  up the name of your town. Your location and town name are saved on your device so the forecast can
+  refresh. Your location is not sent to our analytics. If you don't allow location, the app works
+  without weather.</p>
+
+  <p><strong>Purchases.</strong> Subscriptions and the lifetime purchase are handled by Apple. We never see
+  your payment card or Apple ID. We use RevenueCat to check whether your purchase is active. RevenueCat
+  receives your purchase receipts and an anonymous ID it creates.</p>
+
+  <p><strong>Feedback you send us.</strong> If you send a message from Settings (Report a Bug or Request a
+  Feature), we receive your message, your app version and device model, and your email address only if
+  you choose to give one so we can reply. Feedback is sent only when you tap Send. Because sending it
+  is your choice, it is delivered even if analytics is turned off.</p>
+
+  <h2>Service providers</h2>
+  <p>We share data only with these providers, only for the purposes above. Each processes it on our
+  behalf under its own privacy terms.</p>
+  <div class="table-wrap">
+    <table>
+      <tr><th>Provider</th><th>What it receives</th><th>Why</th></tr>
+      <tr><td><a href="https://posthog.com/privacy">PostHog</a> (USA)</td><td>Usage events, random install ID, device details, feedback messages</td><td>Analytics and support</td></tr>
+      <tr><td><a href="https://www.revenuecat.com/privacy/">RevenueCat</a> (USA)</td><td>Purchase receipts and an anonymous ID</td><td>Checking your subscription</td></tr>
+      <tr><td><a href="https://www.weatherapi.com/privacy.aspx">WeatherAPI.com</a></td><td>Your coordinates, if you allow location</td><td>Local weather</td></tr>
+      <tr><td><a href="https://www.apple.com/legal/privacy/">Apple</a></td><td>Payments, location look-up</td><td>Purchases and your town name</td></tr>
+    </table>
+  </div>
+
+  <h2>What we never do</h2>
+  <ul>
+    <li>We don't show ads or use advertising identifiers.</li>
+    <li>We don't sell or rent your data.</li>
+    <li>We don't track you across other companies' apps or websites.</li>
+    <li>We don't combine your data with data from other sources.</li>
+  </ul>
+
+  <h2>How long we keep data</h2>
+  <p>We keep usage analytics only as long as it is useful for improving WakeStar, and we keep feedback
+  messages only as long as we need them to respond and fix the problem you reported. Data on your
+  iPhone stays until you delete it or delete the app.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li><strong>Turn off analytics</strong> in Settings → Share Anonymous Analytics.</li>
+    <li><strong>Change permissions</strong> for location, camera, microphone and motion at any time in the
+    iOS Settings app.</li>
+    <li><strong>Delete your data.</strong> Deleting WakeStar removes everything stored on your iPhone,
+    including the random install ID. To have the analytics or feedback we hold deleted, email
+    <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a> with the install ID from Settings → About.
+    We'll delete it and confirm by email.</li>
+    <li><strong>Manage subscriptions</strong> in the iOS Settings app → your name → Subscriptions.</li>
+  </ul>
+  <p>Depending on where you live (for example the EU, UK or California), you may have the right to
+  access, correct, delete or move your data, and to object to how we use it. Email us to use any of
+  these rights.</p>
+
+  <h2>Children</h2>
+  <p>WakeStar is not directed at children under 13, and we don't knowingly collect data from them. If you
+  believe a child has sent us data, email us and we'll delete it.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we change this policy, we'll update this page and the date at the top. If a change is
+  significant, we'll also tell you in the app.</p>
+
+  <footer>WakeStar · <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a></footer>
+</main>
+</body>
+</html>

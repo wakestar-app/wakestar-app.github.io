@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WakeStar</title>
+<meta name="description" content="WakeStar is an alarm app for iPhone that makes sure you get up.">
+<style>
+  /* Plain legal page: one readable column, system fonts, light and dark. */
+  :root {
+    --bg: #FAF8F4;
+    --fg: #22201C;
+    --muted: #6B655B;
+    --accent: #8A5A12;
+    --line: #E6E0D4;
+    --panel: #F1ECE2;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12110F;
+      --fg: #EEEAE2;
+      --muted: #A39C90;
+      --accent: #F2C36B;
+      --line: #2A2722;
+      --panel: #1B1915;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 48px 20px 80px;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 6px; text-wrap: balance; }
+  h2 { font-size: 1.2rem; margin: 40px 0 8px; text-wrap: balance; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 1.2em; margin: 0 0 12px; }
+  a { color: var(--accent); }
+  .meta { color: var(--muted); font-size: 0.95rem; margin-bottom: 28px; }
+  .summary {
+    background: var(--panel);
+    border-radius: 12px;
+    padding: 18px 20px;
+  }
+  .summary ul { margin: 0; }
+  .summary li:last-child { margin-bottom: 0; }
+  .table-wrap { overflow-x: auto; margin: 0 0 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; font-size: 0.85rem; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>WakeStar</h1>
+  <p class="meta">An alarm app for iPhone that makes sure you get up.</p>
+  <ul>
+    <li><a href="/support/">Support</a></li>
+    <li><a href="/privacy/">Privacy Policy</a></li>
+  </ul>
+  <footer>WakeStar · <a href="/support/">Support</a> · <a href="/privacy/">Privacy Policy</a></footer>
+</main>
+</body>
+</html>
