@@ -58,7 +58,7 @@
 <body>
 <main>
   <h1>WakeStar Privacy Policy</h1>
-  <p class="meta">Effective October 8, 2026</p>
+  <p class="meta">Effective October 17, 2026</p>
 
   <div class="summary">
     <ul>
@@ -112,7 +112,12 @@
 
   <p><strong>Purchases.</strong> Subscriptions and the lifetime purchase are handled by Apple. We never see
   your payment card or Apple ID. We use RevenueCat to check whether your purchase is active. RevenueCat
-  receives your purchase receipts and an anonymous ID it creates.</p>
+  receives your purchase receipts and an anonymous ID it creates. While analytics is on, RevenueCat also
+  receives the app's random install ID, so purchase events (for example, a trial that starts or renews)
+  can be counted with the rest of our analytics in PostHog. If you installed WakeStar from an Apple Ads
+  ad, Apple gives the app an attribution token. It holds no advertising identifier and needs no tracking
+  permission. RevenueCat uses it to tell us which Apple Ads campaign led to a purchase. When you turn
+  analytics off, the install ID is no longer sent, and the attribution token stops from the next launch.</p>
 
   <p><strong>Feedback you send us.</strong> If you send a message from Settings (Report a Bug or Request a
   Feature), we receive your message, your app version and device model, a short summary of your setup
@@ -129,7 +134,7 @@
     <table>
       <tr><th>Provider</th><th>What it receives</th><th>Why</th></tr>
       <tr><td><a href="https://posthog.com/privacy">PostHog</a> (USA)</td><td>Usage events, crash reports, random install ID, device details, feedback messages</td><td>Analytics and support</td></tr>
-      <tr><td><a href="https://www.revenuecat.com/privacy/">RevenueCat</a> (USA)</td><td>Purchase receipts and an anonymous ID</td><td>Checking your subscription</td></tr>
+      <tr><td><a href="https://www.revenuecat.com/privacy/">RevenueCat</a> (USA)</td><td>Purchase receipts and an anonymous ID; while analytics is on, the random install ID and the Apple Ads attribution token</td><td>Checking your subscription</td></tr>
       <tr><td><a href="https://www.weatherapi.com/privacy.aspx">WeatherAPI.com</a></td><td>Your coordinates, if you allow location</td><td>Local weather</td></tr>
       <tr><td><a href="https://www.apple.com/legal/privacy/">Apple</a></td><td>Payments, location look-up</td><td>Purchases and your town name</td></tr>
     </table>
