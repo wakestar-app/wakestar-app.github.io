@@ -65,7 +65,7 @@
       <li>WakeStar has no accounts. We never ask for your name.</li>
       <li>Camera, microphone and motion are processed on your iPhone and never uploaded.</li>
       <li>We collect anonymous usage analytics to improve the app. You can turn it off in Settings.</li>
-      <li>If you allow location, your coordinates are sent to our weather provider to show local weather.</li>
+      <li>If you allow location, your approximate location (rounded to about 1 km) is sent to our weather provider to show local weather.</li>
       <li>No ads. We never sell your data or track you across other apps.</li>
     </ul>
   </div>
@@ -95,8 +95,9 @@
   was completed, a screen of the setup was finished, the paywall was shown. Events include the alarm
   and bedtime times you set, your settings and permission choices, your device model, iOS version,
   language and time zone. Each install gets a random ID that is not connected to your name, email,
-  Apple ID or device identifiers. You can see this ID in Settings → About. Like any internet service,
-  PostHog can see the IP address your request comes from. We don't use it to identify you.</p>
+  Apple ID or device identifiers. You can see this ID in Settings → About. PostHog uses the IP address
+  your request comes from to look up your country and region (for example, a state), then discards the
+  IP address. We never store your city, postcode or exact location with analytics.</p>
   <p>You can turn analytics off at any time in Settings → Share Anonymous Analytics.</p>
 
   <p><strong>Crash reports.</strong> If the app crashes, it sends a crash report to PostHog the next time
@@ -104,10 +105,10 @@
   Crash reports never include your alarm labels or anything you typed. They are part of analytics, so they
   stop when you turn analytics off.</p>
 
-  <p><strong>Weather and location.</strong> If you allow location access, WakeStar sends your device's
-  coordinates to WeatherAPI.com to get your local forecast, and uses Apple's location services to look
+  <p><strong>Weather and location.</strong> If you allow location access, WakeStar sends your approximate
+  location, rounded to about 1 km, to WeatherAPI.com to get your local forecast, and uses Apple's location services to look
   up the name of your town. Your location and town name are saved on your device so the forecast can
-  refresh. Your location is not sent to our analytics. If you don't allow location, the app works
+  refresh. Your location is not sent to our analytics; analytics only knows your country and region (see above). If you don't allow location, the app works
   without weather.</p>
 
   <p><strong>Purchases.</strong> Subscriptions and the lifetime purchase are handled by Apple. We never see
@@ -135,7 +136,7 @@
       <tr><th>Provider</th><th>What it receives</th><th>Why</th></tr>
       <tr><td><a href="https://posthog.com/privacy">PostHog</a> (USA)</td><td>Usage events, crash reports, random install ID, device details, feedback messages</td><td>Analytics and support</td></tr>
       <tr><td><a href="https://www.revenuecat.com/privacy/">RevenueCat</a> (USA)</td><td>Purchase receipts and an anonymous ID; while analytics is on, the random install ID and the Apple Ads attribution token</td><td>Checking your subscription</td></tr>
-      <tr><td><a href="https://www.weatherapi.com/privacy.aspx">WeatherAPI.com</a></td><td>Your coordinates, if you allow location</td><td>Local weather</td></tr>
+      <tr><td><a href="https://www.weatherapi.com/privacy.aspx">WeatherAPI.com</a></td><td>Your approximate location (about 1 km), if you allow location</td><td>Local weather</td></tr>
       <tr><td><a href="https://www.apple.com/legal/privacy/">Apple</a></td><td>Payments, location look-up</td><td>Purchases and your town name</td></tr>
     </table>
   </div>
